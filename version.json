@@ -1,6 +1,6 @@
 {
-  "versionCode": 3,
-  "versionName": "1.0.2",
+  "versionCode": 4,
+  "versionName": "1.0.3",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
-  "releaseNotes": "1. Updated & standardized feeder names list with proper Tamil names (பாலையூர், வைத்தீஸ்வரன்கோவில், மணல்மேடு, சகேலி, நீடூர், திருவாரூர்).\n2. Standard industry acronyms and terms preserved in English: TPL, PPN, KGTPS, OPG, Auto SS, TS II, Link, Express, Traction I, Traction II.\n3. Updated database seeds and JSON mapping assets."
+  "releaseNotes": "1. Feeders List Screen: Fully visible screen title without truncation and compact 'EN | த' language toggle.\n2. Feeder Cards: Single-line feeder name, removed voltage badges, and compact action button layout.\n3. Routine Work: Feeder dropdown sorted strictly in master sl_no sequence (1..29).\n4. Routine Patrol: Added manual text input field for custom work remarks above sub-categories.\n5. Special Work Report: Downscaled and compressed PDF report images to ensure file size strictly stays below 10 MB."
 }
