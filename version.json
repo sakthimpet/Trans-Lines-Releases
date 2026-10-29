@@ -1,6 +1,6 @@
 {
-  "versionCode": 5,
-  "versionName": "1.0.4",
+  "versionCode": 6,
+  "versionName": "1.0.5",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
-  "releaseNotes": "1. Multi-File Import Support: Select multiple files at once (.kmz, .kml, .gpx, .db, .mbtiles, .txt, .csv, photos).\n2. Review & Deselection: Visual file list with file format badges, sizes, remove chips/buttons, and total selected count.\n3. Batch Queue Processing: Step-by-step progress indicator ('Importing 3 of 10 files...') with graceful per-file error isolation without aborting the batch.\n4. Seamless In-App Installation: Complete FileProvider, InstallResultReceiver, and unknown sources permissions for OTA updates."
+  "releaseNotes": "1. Target Feeder Line Saving: Saving lines between markers automatically detects and saves into the corresponding feeder file, with interactive feeder target selection.\n2. Right Drawer Fit to Screen: The '[ ]' icon button smoothly animates camera to fit feeder bounds with padding, auto-enables visibility, and closes drawer.\n3. Feeder Name Display & Layout: Tamil feeder titles wrap across 2 lines with enhanced 15px typography preventing truncation; English names wrap cleanly.\n4. Master 29 Feeders Synchronization: Restored Feeder 22 (110kV Palaiyur - Sembanarkoil) with exact sl_no sequence across Pre-monsoon, Routine Patrol, and Special Work."
 }
