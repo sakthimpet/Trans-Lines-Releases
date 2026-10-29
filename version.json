@@ -1,0 +1,6 @@
+{
+  "versionCode": 2,
+  "versionName": "1.0.1",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
+  "releaseNotes": "1. Fast Google Maps (Road, Satellite, Hybrid) with RAM LRU & Disk Tile Caching and parallel subdomains.\n2. English & Tamil (EN | தமிழ்) toggle showing Feeder Names in Tamil everywhere.\n3. Routine Patrol module with RP.db, Date & Time photo stamping (no GPS), and <3MB JPEG/PDF/CSV reports.\n4. Dedicated PM.db, RP.db, and SPL.db SQLite databases with auto-migration.\n5. Database Backup / Restore & Share (PM, SPL, RP) with ZIP bundle support."
+}
