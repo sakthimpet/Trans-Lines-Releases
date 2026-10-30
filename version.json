@@ -1,6 +1,7 @@
 {
-  "versionCode": 7,
-  "versionName": "1.0.6",
+  "versionCode": 8,
+  "versionName": "1.0.7",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
-  "releaseNotes": "1. Strict 29 Master Feeders: Fixed feeder dropdowns across Pre-monsoon, Routine Patrol, and Special Work to strictly load the 29 master feeders (1-29) without extra/duplicate entries in Tamil and English.\n2. Right Drawer Feeder Name Wrapping: Feeder names calculate line length and wrap naturally after the hyphen (' - ') without shrinking text size, keeping font crisp and readable.\n3. Dynamic Language Updates: Dropdowns and drawer items instantly re-render when switching between English ('EN') and Tamil ('த').\n4. Robust Record Filtering: Database queries for saved inspections, patrols, and special works match records across both English and Tamil feeder aliases."
+  "apkSize": "25.8 MB",
+  "releaseNotes": "1. Right Drawer Feeder Names: Removed English-to-Tamil conversion from the right drawer; raw feeder/file names render in English with responsive hyphen-based line breaks.\n2. Right Drawer Feeders Backup & Restore: Dedicated Feeders database backup (.db), restore, and share options accessible directly from the drawer header for GIS feeder data.\n3. OTA Update Size Display: Download size (MB/total MB) and package size clearly displayed before download, during downloading, and during APK package installation."
 }
