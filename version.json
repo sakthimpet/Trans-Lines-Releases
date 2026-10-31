@@ -1,7 +1,7 @@
 {
-  "versionCode": 9,
-  "versionName": "1.0.8",
+  "versionCode": 10,
+  "versionName": "1.0.9",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
   "apkSize": "25.8 MB",
-  "releaseNotes": "1. Default Camera: App launch defaults to Mayiladuthurai (11.1075, 79.6524, zoom 13.0).\n2. Marker Rename Ergonomics: Autofocus, cursor at text end, and post-rename map recentering.\n3. Non-Overlapping Marker Labels: Shifted top-right (Offset(16,-10)) with 40% white fill and 50% border stroke, eliminating line crossover.\n4. Collapsible Floating Toolbar: 35% opacity vertical toolbar with 3-dots/arrow toggle, auto-collapsing on selection or map tap.\n5. Bottom-Right Controls: Location and Zoom buttons moved to bottom-right with 30% background opacity.\n6. Compact Map Scale: Reduced dimensions with 60% opacity black chip.\n7. Top-Left Compass: Real-time map bearing rotation and smooth one-tap reset to North."
+  "releaseNotes": "1. Default Map Location: App open strictly loads centered at Mayiladuthurai (11.1075, 79.6524, zoom 13.0) without resetting on navigation.\n2. Right Feeder Drawer State: Preserves feeder/folder expansion and scroll position when selecting tower markers.\n3. Hardware Compass Sensor: Device magnetometer heading integration with smooth North reset.\n4. Photo Mix-up Bug Fix: Globally unique photo IDs and independent storage across all Routine Patrol entries.\n5. Pre-Monsoon & Special Work Photo Isolation: Permanent app storage with independent photo paths.\n6. Gallery Export: Automatically saves camera photos to phone public Pictures/Trans-Lines GIS/ album.\n7. Gallery Import: Pick existing photos from gallery without fake GPS coordinates.\n8. Routine Patrol Report Redesign: Official TANTRANSCO header, dynamic work descriptions for Tree Clearance & Tower Foot, two-column Before/After photo comparison layout."
 }
