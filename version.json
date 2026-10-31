@@ -2,6 +2,6 @@
   "versionCode": 10,
   "versionName": "1.0.9",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
-  "apkSize": "25.8 MB",
+  "apkSize": "26.0 MB",
   "releaseNotes": "1. Default Map Location: App open strictly loads centered at Mayiladuthurai (11.1075, 79.6524, zoom 13.0) without resetting on navigation.\n2. Right Feeder Drawer State: Preserves feeder/folder expansion and scroll position when selecting tower markers.\n3. Hardware Compass Sensor: Device magnetometer heading integration with smooth North reset.\n4. Photo Mix-up Bug Fix: Globally unique photo IDs and independent storage across all Routine Patrol entries.\n5. Pre-Monsoon & Special Work Photo Isolation: Permanent app storage with independent photo paths.\n6. Gallery Export: Automatically saves camera photos to phone public Pictures/Trans-Lines GIS/ album.\n7. Gallery Import: Pick existing photos from gallery without fake GPS coordinates.\n8. Routine Patrol Report Redesign: Official TANTRANSCO header, dynamic work descriptions for Tree Clearance & Tower Foot, two-column Before/After photo comparison layout."
 }
