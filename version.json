@@ -1,12 +1,12 @@
 {
-  "versionCode": 12,
-  "versionName": "1.0.11",
+  "versionCode": 13,
+  "versionName": "1.0.12",
   "releaseDate": "2026-11-01",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.11/app-release.apk",
-  "apkChecksum": "d6c47ab7baedd336803900dd7b83a35c41911a854ba9bf7a3eea7c1089ce537f",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.12/app-release.apk",
+  "apkChecksum": "94db5bd2791e99c299a8c551787f992d5ee506a3706a0b9a1eae150a33923f24",
   "apkSize": "26.0 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Video-Style Tower Movement: Long-press any tower marker to display the turquoise teardrop movement handle with 4 directional arrows.\n2. Ergonomic Handle Dragging: Touch and drag the turquoise handle freely across the map with 1:1 invariant tracking; map panning is disabled during dragging.\n3. Continuous Line Preview: Connected feeder transmission lines dynamically stretch and follow tower movement in real-time.\n4. Atomic SQLite Persistence: Releasing the handle automatically saves updated geographical coordinates and connected polylines to the database.\n5. Move Undo Support: One-tap 'UNDO' action in confirmation toast restores original database coordinates and polyline geometry.\n6. Standard Marker Details: Normal tap opens tower details and full Marker Options sheet (Rename, Copy, Move, Delete).",
+  "releaseNotes": "1. OTA Rollback & Revert System: Supports field reversion to the stable baseline (v1.0.10) with Android-compliant higher-versionCode upgrade protection.\n2. Administrator Console: Dedicated Admin PIN (7381) access with 'Revert to Previous Stable Version', live version matrix, and audit trail.\n3. Pre-Update Safety Snapshots: Automatically creates SQLite backups in ota_backups/ before installing updates to guarantee zero data loss.\n4. Post-Update Startup Health Check: Automatically runs PRAGMA integrity_check and validates feeder and configuration schemas on startup.\n5. SHA-256 Checksum Verification: Full binary package hash verification integrated natively into download and installation pipelines.\n6. Persistent Audit Trail: Logs all OTA, rollback, and health events in ota_logs/ota_audit_log.json.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
