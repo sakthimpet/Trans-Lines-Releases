@@ -1,7 +1,7 @@
 {
-  "versionCode": 11,
-  "versionName": "1.0.10",
+  "versionCode": 12,
+  "versionName": "1.0.11",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
   "apkSize": "26.0 MB",
-  "releaseNotes": "1. Feeder Row Auto-Resize: Feeder names wrap automatically onto multiple lines without height clipping, and Tower Count remains always visible below the title for both Tamil and English feeders.\n2. Tower Marker Drag & Drop: Long-press any tower marker to enter Move Mode and drag to reposition. Automatically updates coordinates in SQLite database and refreshes feeder lines.\n3. Safe Feeder Association: Guaranteed tower isolation across different feeders using stable composite identifiers.\n4. Feeder Line Geometry & Distance Sync: Polyline vertices and cumulative transmission-line distances update dynamically when a tower moves.\n5. Move Undo Support: One-tap 'UNDO' action in confirmation toast restores original database coordinates and polyline geometry.\n6. KMZ / KML Export Compatibility: Coordinate modifications are preserved in database and exported KMZ/KML packages without corrupting source files."
+  "releaseNotes": "1. Video-Style Tower Movement: Long-press any tower marker to display the turquoise teardrop movement handle with 4 directional arrows.\n2. Ergonomic Handle Dragging: Touch and drag the turquoise handle freely across the map with 1:1 invariant tracking; map panning is disabled during dragging.\n3. Continuous Line Preview: Connected feeder transmission lines dynamically stretch and follow tower movement in real-time.\n4. Atomic SQLite Persistence: Releasing the handle automatically saves updated geographical coordinates and connected polylines to the database.\n5. Move Undo Support: One-tap 'UNDO' action in confirmation toast restores original database coordinates and polyline geometry.\n6. Standard Marker Details: Normal tap opens tower details and full Marker Options sheet (Rename, Copy, Move, Delete)."
 }
