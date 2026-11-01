@@ -1,7 +1,7 @@
 {
-  "versionCode": 10,
-  "versionName": "1.0.9",
+  "versionCode": 11,
+  "versionName": "1.0.10",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/latest/download/app-release.apk",
   "apkSize": "26.0 MB",
-  "releaseNotes": "1. Default Map Location: App open strictly loads centered at Mayiladuthurai (11.1075, 79.6524, zoom 13.0) without resetting on navigation.\n2. Right Feeder Drawer State: Preserves feeder/folder expansion and scroll position when selecting tower markers.\n3. Hardware Compass Sensor: Device magnetometer heading integration with smooth North reset.\n4. Photo Mix-up Bug Fix: Globally unique photo IDs and independent storage across all Routine Patrol entries.\n5. Pre-Monsoon & Special Work Photo Isolation: Permanent app storage with independent photo paths.\n6. Gallery Export: Automatically saves camera photos to phone public Pictures/Trans-Lines GIS/ album.\n7. Gallery Import: Pick existing photos from gallery without fake GPS coordinates.\n8. Routine Patrol Report Redesign: Official TANTRANSCO header, dynamic work descriptions for Tree Clearance & Tower Foot, two-column Before/After photo comparison layout."
+  "releaseNotes": "1. Feeder Row Auto-Resize: Feeder names wrap automatically onto multiple lines without height clipping, and Tower Count remains always visible below the title for both Tamil and English feeders.\n2. Tower Marker Drag & Drop: Long-press any tower marker to enter Move Mode and drag to reposition. Automatically updates coordinates in SQLite database and refreshes feeder lines.\n3. Safe Feeder Association: Guaranteed tower isolation across different feeders using stable composite identifiers.\n4. Feeder Line Geometry & Distance Sync: Polyline vertices and cumulative transmission-line distances update dynamically when a tower moves.\n5. Move Undo Support: One-tap 'UNDO' action in confirmation toast restores original database coordinates and polyline geometry.\n6. KMZ / KML Export Compatibility: Coordinate modifications are preserved in database and exported KMZ/KML packages without corrupting source files."
 }
