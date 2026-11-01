@@ -1,12 +1,12 @@
 {
-  "versionCode": 13,
-  "versionName": "1.0.12",
+  "versionCode": 14,
+  "versionName": "1.0.13",
   "releaseDate": "2026-11-01",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.12/app-release.apk",
-  "apkChecksum": "94db5bd2791e99c299a8c551787f992d5ee506a3706a0b9a1eae150a33923f24",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.13/app-release.apk",
+  "apkChecksum": "b96921a36d1296ac9de4d518d8c4f7f5647556db8beddc075c4355ca10036e8d",
   "apkSize": "26.0 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. OTA Rollback & Revert System: Supports field reversion to the stable baseline (v1.0.10) with Android-compliant higher-versionCode upgrade protection.\n2. Administrator Console: Dedicated Admin PIN (7381) access with 'Revert to Previous Stable Version', live version matrix, and audit trail.\n3. Pre-Update Safety Snapshots: Automatically creates SQLite backups in ota_backups/ before installing updates to guarantee zero data loss.\n4. Post-Update Startup Health Check: Automatically runs PRAGMA integrity_check and validates feeder and configuration schemas on startup.\n5. SHA-256 Checksum Verification: Full binary package hash verification integrated natively into download and installation pipelines.\n6. Persistent Audit Trail: Logs all OTA, rollback, and health events in ota_logs/ota_audit_log.json.",
+  "releaseNotes": "1. Dedicated Pointer-Capture Overlay: Topmost TowerMoveOverlay in the Stack with HitTestBehavior.opaque covering the full map viewport.\n2. Complete Map Isolation: Zero touch events penetrate to FlutterMap during tower dragging; the background map stays 100% frozen and stationary while the selected tower moves freely.\n3. Accurate Coordinate Mapping: MapCamera API conversion maintains 1:1 invariant tracking between pointer and geographical coordinates.\n4. Three-Finger Screenshot Compatibility: 3-finger touch gesture cleanly blocks map movement so system screenshots capture without camera shift.\n5. Atomic SQLite Updates & Dynamic Line Stretches: Releasing the movement handle commits coordinates to SQLite and refreshes connected feeder lines with full UNDO support.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
