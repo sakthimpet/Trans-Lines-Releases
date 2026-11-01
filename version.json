@@ -1,12 +1,12 @@
 {
-  "versionCode": 14,
-  "versionName": "1.0.13",
+  "versionCode": 15,
+  "versionName": "1.0.14",
   "releaseDate": "2026-11-01",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.13/app-release.apk",
-  "apkChecksum": "b96921a36d1296ac9de4d518d8c4f7f5647556db8beddc075c4355ca10036e8d",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.14/app-release.apk",
+  "apkChecksum": "be86b23a927bc8021f31472cf094197d67ef4f1dbe4e6ea7a8cf852cd1afd0b7",
   "apkSize": "26.0 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Dedicated Pointer-Capture Overlay: Topmost TowerMoveOverlay in the Stack with HitTestBehavior.opaque covering the full map viewport.\n2. Complete Map Isolation: Zero touch events penetrate to FlutterMap during tower dragging; the background map stays 100% frozen and stationary while the selected tower moves freely.\n3. Accurate Coordinate Mapping: MapCamera API conversion maintains 1:1 invariant tracking between pointer and geographical coordinates.\n4. Three-Finger Screenshot Compatibility: 3-finger touch gesture cleanly blocks map movement so system screenshots capture without camera shift.\n5. Atomic SQLite Updates & Dynamic Line Stretches: Releasing the movement handle commits coordinates to SQLite and refreshes connected feeder lines with full UNDO support.",
+  "releaseNotes": "1. Persistent Marker Notification Fix: Marker move success notification auto-dismisses strictly after 5 seconds.\n2. Single-Tap Undo: Reverts database coordinates, refreshes map markers and line geometry, and shows a 3-second 'Tower movement undone successfully' toast.\n3. Automatic Notification Dismissal: Dismisses immediately upon any map pan/zoom, drawer opening, marker selection, or screen transition.\n4. Concurrency Guard: Prevents duplicate undo actions and cancels stale callbacks.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
