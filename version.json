@@ -1,12 +1,12 @@
 {
-  "versionCode": 16,
-  "versionName": "1.0.15",
+  "versionCode": 17,
+  "versionName": "1.0.16",
   "releaseDate": "2026-11-04",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.15/app-release.apk",
-  "apkChecksum": "2606f81f8cba7fb12dda3c8dff83603802d20c86669e740a2058bc994cacbc77",
-  "apkSize": "26.2 MB",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.16/app-release.apk",
+  "apkChecksum": "8742135e9f8d88f8cd87b0a01a647e0f6b2022732791557cfc85266c918bfd4a",
+  "apkSize": "26.4 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Multi-Marker Selection Mode: Tap 'Select Markers' in feeder context menu to select individual or multiple tower markers with compact checkboxes, sticky top toolbar, Select All, and Clear Selection.\n2. Copy & Move to Feeder: Transfer selected towers with complete SQLite transaction safety, independent database IDs for copied records, and dynamic line geometry recalculation.\n3. Automatic Sequence Merging: Transferred towers naturally merge into their numerical sequence without appending to the end.\n4. TANTRANSCO Tower Parsing & Tension Sorting: Full support for numeric, alphabetic (31A, 79A), tension point 'T' (4T, 8T, 12T), and slash-separated formats (10/1, 10/1T, 10/2, 10/3, 10/3T, 10/4). Tension point towers appear immediately after normal towers with [T] badge and 'TENSION' tower_type.\n5. Duplicate Location Conflict Handling: Geographical conflict warnings with Keep Both Towers, Cancel Transfer, and Review Both on Map options.\n6. UI & Safe Scrolling Fixes: Resolved container decoration assertions and wrapped drawer bottom sheets in scroll-safe containers.",
+  "releaseNotes": "1. TANTRANSCO Fault Inspection Module: Calculate estimated fault section along EHT transmission feeders using Trip Relay distance readings.\n2. Single-Ended & Two-Ended Relays: Full support for single relays installed at either start or end station, and two-relay cross-checks with consistency & discrepancy warnings.\n3. LILO (Loop-In Loop-Out) Network Support: Topological mapping for Main-Line, Line-In, and Line-Out branches connected to tapped substations.\n4. TANTRANSCO Location Number Compatibility: Full natural sequence support for numeric, alphabetic (31A, 79A), tension point 'T' (4T, 8T), and slash-separated formats (10/1, 10/1T, 10/2).\n5. Live GIS Map Highlighting: Seamless navigation and high-visibility map highlighting of fault spans, surrounding towers, and estimated fault GPS coordinates.\n6. Inspection History & Drafts: Save, reopen, edit, and export fault inspection records with complete SQLite data preservation.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
