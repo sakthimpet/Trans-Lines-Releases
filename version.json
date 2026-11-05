@@ -1,21 +1,21 @@
 {
-  "versionCode": 17,
-  "versionName": "1.0.16",
-  "releaseDate": "2026-11-04",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.16/app-release.apk",
-  "apkChecksum": "8742135e9f8d88f8cd87b0a01a647e0f6b2022732791557cfc85266c918bfd4a",
+  "versionCode": 18,
+  "versionName": "1.0.17",
+  "releaseDate": "2026-11-05",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.17/app-release.apk",
+  "apkChecksum": "9cd3480852edcd762eaf879fe0ddf6f8ebd7e9fc4b40bc1c5ca44dd8dd5bcfa7",
   "apkSize": "26.4 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. TANTRANSCO Fault Inspection Module: Calculate estimated fault section along EHT transmission feeders using Trip Relay distance readings.\n2. Single-Ended & Two-Ended Relays: Full support for single relays installed at either start or end station, and two-relay cross-checks with consistency & discrepancy warnings.\n3. LILO (Loop-In Loop-Out) Network Support: Topological mapping for Main-Line, Line-In, and Line-Out branches connected to tapped substations.\n4. TANTRANSCO Location Number Compatibility: Full natural sequence support for numeric, alphabetic (31A, 79A), tension point 'T' (4T, 8T), and slash-separated formats (10/1, 10/1T, 10/2).\n5. Live GIS Map Highlighting: Seamless navigation and high-visibility map highlighting of fault spans, surrounding towers, and estimated fault GPS coordinates.\n6. Inspection History & Drafts: Save, reopen, edit, and export fault inspection records with complete SQLite data preservation.",
+  "releaseNotes": "1. Precise Route & Bend Geometry Interpolation: Fault distance calculation strictly follows the transmission line's cumulative route geometry and intermediate polyline bends between towers, ensuring the estimated fault marker is placed directly ON the actual feeder line.\n2. Proportional Span Traversal: Calculates exact proportional distances between consecutive towers based on relay distance readings (e.g., Loc.26 to Loc.27 at 55.56% of span) without radial circles or straight chords.\n3. Compass Unobscured & UI Layout Fix: Repositioned the Estimated Fault Information Bar below the compass button and GIS tools row, guaranteeing the compass is 100% visible, accessible, and functional at all times.\n4. Collapsible & Dismissible Fault Bar: Added expand/collapse toggle for compact and full views, quick 'Locate on Map' camera centering, and reopenable floating pill.\n5. Map Toolbar Auto-Hide & Reveal Handle: Auto-hides top search and action toolbar during active map inspection/panning after 4 seconds of inactivity to maximize map viewing area, with an instant 'Show Toolbar' reveal pill.\n6. Rich High-Contrast Fault Marker: Displays previous tower, next tower, distances (+/- km), and cumulative relay distance with a high-contrast badge and pulsing lightning indicator across all 5 map layers.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 11,
-    "versionName": "1.0.10",
-    "releaseDate": "2026-11-01",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.10/app-release.apk",
-    "apkSize": "26.0 MB",
+    "versionCode": 17,
+    "versionName": "1.0.16",
+    "releaseDate": "2026-11-04",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.16/app-release.apk",
+    "apkSize": "26.4 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Feeder Row Auto-Resize: Feeder names wrap automatically onto multiple lines without height clipping, and Tower Count remains always visible below the title for both Tamil and English feeders.\n2. Tower Marker Drag & Drop: Long-press any tower marker to enter Move Mode and drag to reposition. Automatically updates coordinates in SQLite database and refreshes feeder lines.\n3. Safe Feeder Association: Guaranteed tower isolation across different feeders using stable composite identifiers.\n4. Feeder Line Geometry & Distance Sync: Polyline vertices and cumulative transmission-line distances update dynamically when a tower moves.\n5. Move Undo Support: One-tap 'UNDO' action in confirmation toast restores original database coordinates and polyline geometry.\n6. KMZ / KML Export Compatibility: Coordinate modifications are preserved in database and exported KMZ/KML packages without corrupting source files."
+    "releaseNotes": "1. TANTRANSCO Fault Inspection Module: Calculate estimated fault section along EHT transmission feeders using Trip Relay distance readings.\n2. Single-Ended & Two-Ended Relays: Full support for single relays installed at either start or end station, and two-relay cross-checks with consistency & discrepancy warnings.\n3. LILO (Loop-In Loop-Out) Network Support: Topological mapping for Main-Line, Line-In, and Line-Out branches connected to tapped substations.\n4. TANTRANSCO Location Number Compatibility: Full natural sequence support for numeric, alphabetic (31A, 79A), tension point 'T' (4T, 8T), and slash-separated formats (10/1, 10/1T, 10/2).\n5. Live GIS Map Highlighting: Seamless navigation and high-visibility map highlighting of fault spans, surrounding towers, and estimated fault GPS coordinates.\n6. Inspection History & Drafts: Save, reopen, edit, and export fault inspection records with complete SQLite data preservation."
   }
 }
