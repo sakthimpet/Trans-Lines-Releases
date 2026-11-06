@@ -3,7 +3,7 @@
   "versionName": "1.0.18",
   "releaseDate": "2026-11-05",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.18/app-release.apk",
-  "apkChecksum": "dbe1310cf2365b88092c07a920ee7eaa84fb8021113dc68bcace200b08a6802e",
+  "apkChecksum": "32b4f376ca28f293fb56d4d9e2cf1ca352140ac7813d008ced73d489e59151fe",
   "apkSize": "26.4 MB",
   "releaseStatus": "Active",
   "releaseNotes": "1. Map Screen Responsive Top App Bar: Restructured header with left hamburger menu button, centered search bar, and right overflow button respecting Android status bar safe-area insets across all screen widths and resolutions.\n2. Search Bar Visibility & Usability: Resolved vertical and horizontal clipping with a dedicated 42dp rounded search box, clear button, and real-time search suggestions dropdown. Search bar remains completely visible and usable during map panning and zooming.\n3. Left Navigation Drawer Reliability: Standardized 48x48 logical pixel minimum touch target for the hamburger icon with responsive tap handling, smooth edge-swipe drawer opening from the left edge (36dp threshold), and a dedicated close button in the drawer header.\n4. Gesture Priority & Conflict Resolution: Resolved touch interception so left-edge swipe opens the drawer without interfering with map one-finger panning, two-finger zooming, or tower marker dragging.\n5. Feeder List Expansion & State Preservation: Opening and closing the left or right navigation drawer preserves all expanded feeder sections and scroll offsets with zero state resets.",
