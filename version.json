@@ -1,22 +1,22 @@
 {
-  "versionCode": 25,
-  "versionName": "1.0.24",
+  "versionCode": 26,
+  "versionName": "1.0.25",
   "releaseDate": "2026-11-12",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.24/app-release.apk",
-  "apkChecksum": "8da1a9a7e86c66d1271d02debfefe4e8a9ca2c86086ca3aaa92c3ea3d145d3d6",
-  "apkSize": "27.7 MB",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.25/app-release.apk",
+  "apkChecksum": "a2af7eab2b09bb80bd25b28c1e2960b91cf11e1c3b8f7231a9390f7ce4604d46",
+  "apkSize": "27.9 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Fast Buffered In-App OTA Downloader: Replaced per-8KB EventChannel/setState flooding with a direct buffered Dart HttpClient stream, single-pass chunked SHA-256 verification, and throttled progress updates (only on % change or >=250ms).\n2. Native FileProvider APK Installer Channel: Added a lightweight MethodChannel to launch Android's package installer directly for the verified APK without legacy plugin overhead.\n3. Fast Pre-Update Safety Backup: Replaced full-DB in-memory exportDatabaseBytes() with PRAGMA wal_checkpoint(TRUNCATE) before copying the SQLite snapshot, eliminating pre-download memory spikes and delay.",
+  "releaseNotes": "1. Crossings Abstract Excel (.xlsx) & PDF (.pdf) Export: Added filtered export (All/Selected Feeder, All/Selected Category) with 3-sheet formatted Excel workbook (Crossings Abstract, Crossing Details with frozen headers & AutoFilter, Import Template) and multi-page A4 Landscape PDF report with preview, Save, and Share.\n2. Validated Excel Import & Safe Transaction: Exported workbooks can be edited and re-imported with row-by-row validation, duplicate/conflict detection, GIS route/dataset intersection protection (flagging unverified edits as Needs Review), Import Preview dialog, pre-import safety backup, and atomic SQLite transaction with audit history.\n3. Voltage-Based Tower Marker Shapes: 230kV feeder tower Location Number badges now render as compact rounded rectangles while 110kV and other voltage levels preserve the existing circular badge, keeping alphanumeric labels (31A, 4T, 10/1T, 26/1) intact.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 24,
-    "versionName": "1.0.23",
+    "versionCode": 25,
+    "versionName": "1.0.24",
     "releaseDate": "2026-11-12",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.23/app-release.apk",
-    "apkChecksum": "acc6af8989af7454fee155b7b999e721a6da8d48a8963c7e234720bfcf83719d",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.24/app-release.apk",
+    "apkChecksum": "8da1a9a7e86c66d1271d02debfefe4e8a9ca2c86086ca3aaa92c3ea3d145d3d6",
     "apkSize": "27.7 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Crossings Module (Left Drawer -> Crossings): Identifies, highlights, and maintains EHT transmission-line crossings across National Highways (NH), State Highways (SH), Main Rivers, and Railway Lines.\n2. Verified Offline Crossing Datasets: Bundled OpenStreetMap Overpass (ODbL 1.0) vector geometries for the Cauvery Delta region (NH: 2,838 features, SH: 1,598 features, Main Rivers: 130 features, Railways: 728 features) for 100% offline detection and highlighting.\n3. Spatial-Indexed Detection Engine: Uses actual feeder route geometry, ordered tower spans, background isolate processing, and configurable proximity tolerance (Potential Crossing vs Automatically Detected).\n4. Crossings Abstract & Details Table: Category summary cards (Total Crossings, Unique Feeders, Unique Tower Locations), feeder filter dropdown, search, and tap-to-inspect details table.\n5. Map Highlighting, Layer Manager & Manual Review: Distinct category icons/colors (NH=Red, SH=Green, River=Blue, Railway=Purple), independent Layer Manager switches, Show Feeder / View Tower popup actions, and full manual verification with SQLite audit history."
+    "releaseNotes": "1. Fast Buffered In-App OTA Downloader: Replaced per-8KB EventChannel/setState flooding with a direct buffered Dart HttpClient stream, single-pass chunked SHA-256 verification, and throttled progress updates (only on % change or >=250ms).\n2. Native FileProvider APK Installer Channel: Added a lightweight MethodChannel to launch Android's package installer directly for the verified APK without legacy plugin overhead.\n3. Fast Pre-Update Safety Backup: Replaced full-DB in-memory exportDatabaseBytes() with PRAGMA wal_checkpoint(TRUNCATE) before copying the SQLite snapshot, eliminating pre-download memory spikes and delay."
   }
 }
