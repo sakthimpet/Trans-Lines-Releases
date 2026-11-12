@@ -1,22 +1,22 @@
 {
-  "versionCode": 20,
-  "versionName": "1.0.19",
+  "versionCode": 21,
+  "versionName": "1.0.20",
   "releaseDate": "2026-11-12",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.19/app-release.apk",
-  "apkChecksum": "ea20dae7c165955b01a3e65f70eb7c42d9a4b83dc831fb18d77041a7e33a74f5",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.20/app-release.apk",
+  "apkChecksum": "6a4b346d07833b4b37f4a550c22b61a481f8163f1fd5c39e1e29cbce1a3416da",
   "apkSize": "26.6 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Tower Phase Identification & Configuration: Full support for Double Circuit (DC on DC), Single Circuit (SC on SC, SC on DC), and Transition Towers (DC to SC, SC to DC) with standard R, Y, B phase color coding and interactive tower schematics.\n2. Viewing Reference & Feeder Orientation: Configure Station A to Station B viewing directions with Front View and Rear View conductor perspective transformation.\n3. Bulk Phase Configuration: Rapid multi-tower phase assignment with feeder range selection (natural numeric, tension, and slash-separated formats).\n4. Compact Tower Marker Card: Streamlined 5-row bottom sheet with quick phase badges, side action buttons, and direct editor access.\n5. Structured SQLite Storage & History: Robust database schema with audit trail for tower phase modifications and safety backup snapshots.",
+  "releaseNotes": "1. Collapsible Tower Phase Identification: Tower marker info popup opens in a clean, compact collapsed state with Location Number, Coordinates, Feeder Name, Cumulative Distance, and bottom action buttons (Start Line, Delete), leaving maximum map area visible.\n2. Expand & Collapse Controls: Added a prominent 'View Phase Details' / 'Hide Phase Details' button and an integrated 3-dot popup menu action with smooth expansion animations.\n3. Detailed Phase Schematic Display: When expanded, displays configuration name, conductor phase assignments (R, Y, B), DC double-circuit layout, SC on DC unused positions, and transition arrangements with Full View and Edit Phase buttons.\n4. Unconfigured Tower Handling: Displays 'Phase Configuration Not Set' with direct 'Edit Phase' access and no assumed diagrams.\n5. State Reset: Automatically reverts to collapsed state when another tower is tapped or the popup is closed.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 19,
-    "versionName": "1.0.18",
-    "releaseDate": "2026-11-05",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.18/app-release.apk",
-    "apkSize": "26.4 MB",
-    "apkChecksum": "32b4f376ca28f293fb56d4d9e2cf1ca352140ac7813d008ced73d489e59151fe",
+    "versionCode": 20,
+    "versionName": "1.0.19",
+    "releaseDate": "2026-11-12",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.19/app-release.apk",
+    "apkSize": "26.6 MB",
+    "apkChecksum": "ea20dae7c165955b01a3e65f70eb7c42d9a4b83dc831fb18d77041a7e33a74f5",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Map Screen Responsive Top App Bar: Restructured header with left hamburger menu button, centered search bar, and right overflow button respecting Android status bar safe-area insets across all screen widths and resolutions.\n2. Search Bar Visibility & Usability: Resolved vertical and horizontal clipping with a dedicated 42dp rounded search box, clear button, and real-time search suggestions dropdown. Search bar remains completely visible and usable during map panning and zooming.\n3. Left Navigation Drawer Reliability: Standardized 48x48 logical pixel minimum touch target for the hamburger icon with responsive tap handling, smooth edge-swipe drawer opening from the left edge (36dp threshold), and a dedicated close button in the drawer header.\n4. Gesture Priority & Conflict Resolution: Resolved touch interception so left-edge swipe opens the drawer without interfering with map one-finger panning, two-finger zooming, or tower marker dragging.\n5. Feeder List Expansion & State Preservation: Opening and closing the left or right navigation drawer preserves all expanded feeder sections and scroll offsets with zero state resets."
+    "releaseNotes": "1. Tower Phase Identification & Configuration: Full support for Double Circuit (DC on DC), Single Circuit (SC on SC, SC on DC), and Transition Towers (DC to SC, SC to DC) with standard R, Y, B phase color coding and interactive tower schematics.\n2. Viewing Reference & Feeder Orientation: Configure Station A to Station B viewing directions with Front View and Rear View conductor perspective transformation.\n3. Bulk Phase Configuration: Rapid multi-tower phase assignment with feeder range selection (natural numeric, tension, and slash-separated formats).\n4. Compact Tower Marker Card: Streamlined 5-row bottom sheet with quick phase badges, side action buttons, and direct editor access.\n5. Structured SQLite Storage & History: Robust database schema with audit trail for tower phase modifications and safety backup snapshots."
   }
 }
