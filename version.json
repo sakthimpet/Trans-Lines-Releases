@@ -1,22 +1,22 @@
 {
-  "versionCode": 24,
-  "versionName": "1.0.23",
+  "versionCode": 25,
+  "versionName": "1.0.24",
   "releaseDate": "2026-11-12",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.23/app-release.apk",
-  "apkChecksum": "acc6af8989af7454fee155b7b999e721a6da8d48a8963c7e234720bfcf83719d",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.24/app-release.apk",
+  "apkChecksum": "8da1a9a7e86c66d1271d02debfefe4e8a9ca2c86086ca3aaa92c3ea3d145d3d6",
   "apkSize": "27.7 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Crossings Module (Left Drawer -> Crossings): Identifies, highlights, and maintains EHT transmission-line crossings across National Highways (NH), State Highways (SH), Main Rivers, and Railway Lines.\n2. Verified Offline Crossing Datasets: Bundled OpenStreetMap Overpass (ODbL 1.0) vector geometries for the Cauvery Delta region (NH: 2,838 features, SH: 1,598 features, Main Rivers: 130 features, Railways: 728 features) for 100% offline detection and highlighting.\n3. Spatial-Indexed Detection Engine: Uses actual feeder route geometry, ordered tower spans, background isolate processing, and configurable proximity tolerance (Potential Crossing vs Automatically Detected).\n4. Crossings Abstract & Details Table: Category summary cards (Total Crossings, Unique Feeders, Unique Tower Locations), feeder filter dropdown, search, and tap-to-inspect details table.\n5. Map Highlighting, Layer Manager & Manual Review: Distinct category icons/colors (NH=Red, SH=Green, River=Blue, Railway=Purple), independent Layer Manager switches, Show Feeder / View Tower popup actions, and full manual verification with SQLite audit history.",
+  "releaseNotes": "1. Fast Buffered In-App OTA Downloader: Replaced per-8KB EventChannel/setState flooding with a direct buffered Dart HttpClient stream, single-pass chunked SHA-256 verification, and throttled progress updates (only on % change or >=250ms).\n2. Native FileProvider APK Installer Channel: Added a lightweight MethodChannel to launch Android's package installer directly for the verified APK without legacy plugin overhead.\n3. Fast Pre-Update Safety Backup: Replaced full-DB in-memory exportDatabaseBytes() with PRAGMA wal_checkpoint(TRUNCATE) before copying the SQLite snapshot, eliminating pre-download memory spikes and delay.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 23,
-    "versionName": "1.0.22",
+    "versionCode": 24,
+    "versionName": "1.0.23",
     "releaseDate": "2026-11-12",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.22/app-release.apk",
-    "apkChecksum": "feffed3f61b4c4b5afbb047aa26ca03808c3af93075a54dbb0b259b9c25edbb3",
-    "apkSize": "26.8 MB",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.23/app-release.apk",
+    "apkChecksum": "acc6af8989af7454fee155b7b999e721a6da8d48a8963c7e234720bfcf83719d",
+    "apkSize": "27.7 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Responsive GIS Layer & Map Manager: Controlled state management ensures every overlay toggle switch (District Boundaries, District Names, Feeder Lines, Tower Markers, Fault Locations) and base map selector responds immediately to a single tap with >=48dp touch targets.\n2. Base Map Switching Protection: Mutually exclusive base map selection with rapid-tap locking, stale-request cancellation, and a per-tile loading indicator for offline MBTiles initialization.\n3. 60fps Map Pan/Zoom Optimization: Eliminated full-screen rebuilds on camera movement using scoped ValueNotifiers for HUD elements, cached tile providers, and O(1) independent overlay toggling.\n4. GeoJSON & District Polygon Performance: Background-isolate GeoJSON parsing, Douglas-Peucker polygon simplification for rendering while preserving hit-test accuracy, and bounding-box pre-checks.\n5. Zoom-Dependent Tower Labels: Automatic label visibility threshold at wide zoom levels to keep dense feeder and tower rendering smooth."
+    "releaseNotes": "1. Crossings Module (Left Drawer -> Crossings): Identifies, highlights, and maintains EHT transmission-line crossings across National Highways (NH), State Highways (SH), Main Rivers, and Railway Lines.\n2. Verified Offline Crossing Datasets: Bundled OpenStreetMap Overpass (ODbL 1.0) vector geometries for the Cauvery Delta region (NH: 2,838 features, SH: 1,598 features, Main Rivers: 130 features, Railways: 728 features) for 100% offline detection and highlighting.\n3. Spatial-Indexed Detection Engine: Uses actual feeder route geometry, ordered tower spans, background isolate processing, and configurable proximity tolerance (Potential Crossing vs Automatically Detected).\n4. Crossings Abstract & Details Table: Category summary cards (Total Crossings, Unique Feeders, Unique Tower Locations), feeder filter dropdown, search, and tap-to-inspect details table.\n5. Map Highlighting, Layer Manager & Manual Review: Distinct category icons/colors (NH=Red, SH=Green, River=Blue, Railway=Purple), independent Layer Manager switches, Show Feeder / View Tower popup actions, and full manual verification with SQLite audit history."
   }
 }
