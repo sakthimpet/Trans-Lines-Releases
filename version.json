@@ -1,22 +1,22 @@
 {
-  "versionCode": 23,
-  "versionName": "1.0.22",
+  "versionCode": 24,
+  "versionName": "1.0.23",
   "releaseDate": "2026-11-12",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.22/app-release.apk",
-  "apkChecksum": "feffed3f61b4c4b5afbb047aa26ca03808c3af93075a54dbb0b259b9c25edbb3",
-  "apkSize": "26.8 MB",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.23/app-release.apk",
+  "apkChecksum": "acc6af8989af7454fee155b7b999e721a6da8d48a8963c7e234720bfcf83719d",
+  "apkSize": "27.7 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Responsive GIS Layer & Map Manager: Controlled state management ensures every overlay toggle switch (District Boundaries, District Names, Feeder Lines, Tower Markers, Fault Locations) and base map selector responds immediately to a single tap with >=48dp touch targets.\n2. Base Map Switching Protection: Mutually exclusive base map selection with rapid-tap locking, stale-request cancellation, and a per-tile loading indicator for offline MBTiles initialization.\n3. 60fps Map Pan/Zoom Optimization: Eliminated full-screen rebuilds on camera movement using scoped ValueNotifiers for HUD elements, cached tile providers, and O(1) independent overlay toggling.\n4. GeoJSON & District Polygon Performance: Background-isolate GeoJSON parsing, Douglas-Peucker polygon simplification for rendering while preserving hit-test accuracy, and bounding-box pre-checks.\n5. Zoom-Dependent Tower Labels: Automatic label visibility threshold at wide zoom levels to keep dense feeder and tower rendering smooth.",
+  "releaseNotes": "1. Crossings Module (Left Drawer -> Crossings): Identifies, highlights, and maintains EHT transmission-line crossings across National Highways (NH), State Highways (SH), Main Rivers, and Railway Lines.\n2. Verified Offline Crossing Datasets: Bundled OpenStreetMap Overpass (ODbL 1.0) vector geometries for the Cauvery Delta region (NH: 2,838 features, SH: 1,598 features, Main Rivers: 130 features, Railways: 728 features) for 100% offline detection and highlighting.\n3. Spatial-Indexed Detection Engine: Uses actual feeder route geometry, ordered tower spans, background isolate processing, and configurable proximity tolerance (Potential Crossing vs Automatically Detected).\n4. Crossings Abstract & Details Table: Category summary cards (Total Crossings, Unique Feeders, Unique Tower Locations), feeder filter dropdown, search, and tap-to-inspect details table.\n5. Map Highlighting, Layer Manager & Manual Review: Distinct category icons/colors (NH=Red, SH=Green, River=Blue, Railway=Purple), independent Layer Manager switches, Show Feeder / View Tower popup actions, and full manual verification with SQLite audit history.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 22,
-    "versionName": "1.0.21",
+    "versionCode": 23,
+    "versionName": "1.0.22",
     "releaseDate": "2026-11-12",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.21/app-release.apk",
-    "apkChecksum": "fccd4037bfe1257ac1b73af208679a8c7c71e4528a6ac977eeb6aea9f2571f8f",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.22/app-release.apk",
+    "apkChecksum": "feffed3f61b4c4b5afbb047aa26ca03808c3af93075a54dbb0b259b9c25edbb3",
     "apkSize": "26.8 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. District Boundary GIS Polygon Overlay: Accurate offline administrative district boundaries for Thiruvarur (TVR), Thanjavur (TNJ), Nagapattinam (NGP), and Mayiladuthurai (MYD) using geodesic GeoJSON geometry with MultiPolygon and enclave support.\n2. Tap-to-Identify District Selection: Tapping inside any district polygon highlights its boundary, deepens fill opacity, and displays the compact District Information Card without interrupting map panning or zooming.\n3. District-wise GIS Asset Statistics: Real-time calculation of total physical towers (deduplicated by tower ID) and feeders in each district, categorized with standard voltage levels (400KV, 230KV, 110KV, 33KV, 11KV).\n4. Interactive Asset Browsers: 'View Feeders' and 'View Towers' bottom sheets with instant search, feeder voltage badges, and tap-to-focus navigation directly on the map.\n5. Map Filter Controls & Layer Manager: Switch between 'Show All', 'District Towers Only', and 'District Feeders Only' map view modes, with independent GIS layer toggles for District Boundaries, District Names, Feeder Lines, Tower Markers, and Fault Locations."
+    "releaseNotes": "1. Responsive GIS Layer & Map Manager: Controlled state management ensures every overlay toggle switch (District Boundaries, District Names, Feeder Lines, Tower Markers, Fault Locations) and base map selector responds immediately to a single tap with >=48dp touch targets.\n2. Base Map Switching Protection: Mutually exclusive base map selection with rapid-tap locking, stale-request cancellation, and a per-tile loading indicator for offline MBTiles initialization.\n3. 60fps Map Pan/Zoom Optimization: Eliminated full-screen rebuilds on camera movement using scoped ValueNotifiers for HUD elements, cached tile providers, and O(1) independent overlay toggling.\n4. GeoJSON & District Polygon Performance: Background-isolate GeoJSON parsing, Douglas-Peucker polygon simplification for rendering while preserving hit-test accuracy, and bounding-box pre-checks.\n5. Zoom-Dependent Tower Labels: Automatic label visibility threshold at wide zoom levels to keep dense feeder and tower rendering smooth."
   }
 }
