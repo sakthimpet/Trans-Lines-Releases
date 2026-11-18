@@ -1,22 +1,22 @@
 {
-  "versionCode": 27,
-  "versionName": "1.0.26",
-  "releaseDate": "2026-11-16",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.26/app-release.apk",
-  "apkChecksum": "1490ee764eb085fdc5829dac993ab28c2560222debc8b621a593830d5e7f4397",
-  "apkSize": "26.8 MB",
+  "versionCode": 28,
+  "versionName": "1.0.27",
+  "releaseDate": "2026-11-19",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.27/app-release.apk",
+  "apkChecksum": "1be44fc19dd6a188b4d8fd89370142318cff8c3030671afad3ac6a0774034882",
+  "apkSize": "27.4 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Routine Line Patrol Tap-to-Edit: Tapping any saved card under Saved Works & Reports loads the complete patrol entry for viewing/editing (feeder, date, location numbers, work descriptions, before/after photos) with an active edit banner, Update Patrol Entry action, and independent delete.\n2. Special Work High-Quality JPEG Export: Added 'Export JPEG' export option generating paginated JPEG image reports (<10 MB, adaptive compression, aspect-ratio preserved) with an interactive zoom viewer dialog, direct Save to device, and Share.\n3. Overlapping Multi-Feeder Tower Selection: Tapping markers at identical/overlapping coordinates (<=5m) displays a compact feeder selection sheet with voltage badges and tower details, opening the selected feeder balloon tip without data cross-talk.\n4. Bulk Marker Delete & Sequence Re-indexing: Added Delete button in the right feeder drawer multi-selection toolbar (Copy To, Move To, Delete, Cancel) with confirmation dialog and atomic SQLite transaction that updates polylines, re-indexes tower sequence orders, and refreshes cumulative distances.\n5. Photo Metadata Integrity & Report Modernization: Camera captures acquire live GPS while Gallery imports strictly record null coordinates (no fake 0,0) and extract original EXIF capture time; historical records automatically migrated across Routine Patrol, Pre-Monsoon, and Special Work reports.",
+  "releaseNotes": "1. Google Maps Marker Style & Color Synchronization: Removed hardcoded orange fallback for Rank 3/other voltage feeders in Google Maps. Dynamic marker color and style changes in Settings now immediately invalidate marker bitmap caches (GoogleMapsMarkerHelper.clearCache()), reset marker sets, rebuild features, and re-synchronize asynchronously across both Google Maps and OSM.\n2. Prevention of Unwanted Connecting Lines: Marker-only KML/KMZ imports strictly produce zero polylines. Re-importing marker-only feeder data safely cleans up orphaned or stale polylines associated with previous imports without modifying valid manually drawn lines.\n3. Permanent Location-Number Badges in Google Maps: Custom bitmap markers with clear location-number badges are generated for all tower locations, visible at normal zoom without tapping. Zero stock map pin fallback occurs.\n4. Concurrent Marker Refresh Synchronization: Introduced pending-sync re-queue mechanism to prevent race conditions or dropped sync requests during rapid settings toggles and file loads.\n5. High Scale Parity (350+ Towers): Verified fast batch rendering and identical coordinate/badge parity across both Google Maps and OSM engines.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 26,
-    "versionName": "1.0.25",
-    "releaseDate": "2026-11-12",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.25/app-release.apk",
-    "apkChecksum": "a2af7eab2b09bb80bd25b28c1e2960b91cf11e1c3b8f7231a9390f7ce4604d46",
-    "apkSize": "27.9 MB",
+    "versionCode": 27,
+    "versionName": "1.0.26",
+    "releaseDate": "2026-11-16",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.26/app-release.apk",
+    "apkChecksum": "1490ee764eb085fdc5829dac993ab28c2560222debc8b621a593830d5e7f4397",
+    "apkSize": "26.8 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Crossings Abstract Excel (.xlsx) & PDF (.pdf) Export: Added filtered export (All/Selected Feeder, All/Selected Category) with 3-sheet formatted Excel workbook (Crossings Abstract, Crossing Details with frozen headers & AutoFilter, Import Template) and multi-page A4 Landscape PDF report with preview, Save, and Share.\n2. Validated Excel Import & Safe Transaction: Exported workbooks can be edited and re-imported with row-by-row validation, duplicate/conflict detection, GIS route/dataset intersection protection (flagging unverified edits as Needs Review), Import Preview dialog, pre-import safety backup, and atomic SQLite transaction with audit history.\n3. Voltage-Based Tower Marker Shapes: 230kV feeder tower Location Number badges now render as compact rounded rectangles while 110kV and other voltage levels preserve the existing circular badge, keeping alphanumeric labels (31A, 4T, 10/1T, 26/1) intact."
+    "releaseNotes": "1. Routine Line Patrol Tap-to-Edit: Tapping any saved card under Saved Works & Reports loads the complete patrol entry for viewing/editing (feeder, date, location numbers, work descriptions, before/after photos) with an active edit banner, Update Patrol Entry action, and independent delete.\n2. Special Work High-Quality JPEG Export: Added 'Export JPEG' export option generating paginated JPEG image reports (<10 MB, adaptive compression, aspect-ratio preserved) with an interactive zoom viewer dialog, direct Save to device, and Share.\n3. Overlapping Multi-Feeder Tower Selection: Tapping markers at identical/overlapping coordinates (<=5m) displays a compact feeder selection sheet with voltage badges and tower details, opening the selected feeder balloon tip without data cross-talk.\n4. Bulk Marker Delete & Sequence Re-indexing: Added Delete button in the right feeder drawer multi-selection toolbar (Copy To, Move To, Delete, Cancel) with confirmation dialog and atomic SQLite transaction that updates polylines, re-indexes tower sequence orders, and refreshes cumulative distances.\n5. Photo Metadata Integrity & Report Modernization: Camera captures acquire live GPS while Gallery imports strictly record null coordinates (no fake 0,0) and extract original EXIF capture time; historical records automatically migrated across Routine Patrol, Pre-Monsoon, and Special Work reports."
   }
 }
