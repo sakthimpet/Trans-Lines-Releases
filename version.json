@@ -1,22 +1,22 @@
 {
-  "versionCode": 29,
-  "versionName": "1.0.28",
-  "releaseDate": "2026-11-19",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.28/app-release.apk",
-  "apkChecksum": "1b266f48943500bbdef26eba377549e1b3fb6b11fe0efb1aad8b77b0f3b342d6",
-  "apkSize": "26.9 MB",
+  "versionCode": 30,
+  "versionName": "1.0.29",
+  "releaseDate": "2026-11-20",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.29/app-release.apk",
+  "apkChecksum": "9ade0c36529c908fe41acdb77ea05dbe1494c5ec19393a824ebea76c15ca9a31",
+  "apkSize": "27.0 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. External Google Maps Navigation from Marker Balloon Tip: Added small, prominent 'Navigate' button inside the compact tower marker balloon tip with Google Maps-style navigation icon; one-tap launches Google Maps app (or web browser fallback) with exact tower coordinates as destination in driving travel mode.\n2. Marker Options Sheet & Popup Menu Integration: 'Navigate in Google Maps' also accessible via the balloon three-dot popup menu and Marker Options bottom sheet for comprehensive accessibility from both map and right feeder drawer.\n3. Robust Coordinate Validation & Tap Debouncing: Coordinates are strictly validated (finite, valid lat/lng boundaries, non-zero) and protected with tap-debouncing cooldown to eliminate accidental double launches; alphanumeric Location Numbers (31A, 4T, 10/1T) preserved.\n4. Real-Time OTA CDN Invalidation: Manifest checks updated with cache-busting headers and query parameters to guarantee instant OTA update detection on devices without CDN or proxy delays.",
+  "releaseNotes": "1. Three-Level GIS Hierarchy: Upgraded data architecture to 'Imported Files → Line Sections → Feeders'. Independent Line Section creation (+ New Section) with full database persistence, duplicate name protection, renaming, and safe deletion options.\n2. Feeder-Specific Display Colors: Every feeder has its own assigned display color applied across tower markers, polylines (with high-contrast casing), right drawer indicator, and interactive floating map legend; includes 24-color curated palette and HSV picker.\n3. Section-Level & Feeder-Level View/Hide: Toggling Section eye icon instantly hides/restores all child feeder lines and markers while strictly preserving individual feeder visibility states; live section color summary dots in drawer.\n4. Migration & Section Assignment: Dedicated 'Assign Feeders to Sections' helper dialog allows one-click batch assignment of historical or unassigned feeders to sections; KMZ/KML import enhanced with target section selector.\n5. Active Feeder Selection & Moving: Feeder context menu includes 'Move to Another Section'; explicit active feeder requirement prevents accidental misassignment of newly created tower markers.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 28,
-    "versionName": "1.0.27",
+    "versionCode": 29,
+    "versionName": "1.0.28",
     "releaseDate": "2026-11-19",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.27/app-release.apk",
-    "apkChecksum": "fff984da3d2d565203b0fc1fa428e44408ae5aff514f7a16c69ffd541d7e5f35",
-    "apkSize": "26.8 MB",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.28/app-release.apk",
+    "apkChecksum": "1b266f48943500bbdef26eba377549e1b3fb6b11fe0efb1aad8b77b0f3b342d6",
+    "apkSize": "26.9 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Create New Feeder: Added prominent '+ New Feeder' action in Right Feeder Drawer with form validation against duplicate feeder names, voltage level (110kV/230kV/Other), line type (SC/DC/Other), substations, and remarks; newly created feeder is automatically selected as active.\n2. Active Feeder Association & Isolation: Fixed critical legacy bug where new markers defaulted to the first feeder; new markers strictly associate with the currently active feeder; mandatory selection prompt blocks tower addition when no feeder is active.\n3. Field Marker Entry & GPS Capture: Displays active feeder name on Add Tower screen ('Saving Tower to: <Feeder>'); supports one-tap device GPS coordinate acquisition or manual lat/lng entry; saves markers using atomic SQLite database transactions.\n4. Feeder Marker Audit: Review and audit historical markers associated with feeders via dedicated dialog, allowing safe, user-confirmed reassignment.\n5. MAPinr-Level Map Quality & Performance: Integrated permitted high-resolution ESRI World Imagery for Satellite and stacked ESRI World Boundaries & Places reference overlay for Hybrid mode; added in-flight HTTP request deduplication and 2-level (RAM+Disk) caching; eliminated unthrottled setState calls during map gestures for fluid 60fps pan/zoom."
+    "releaseNotes": "1. External Google Maps Navigation from Marker Balloon Tip: Added small, prominent 'Navigate' button inside the compact tower marker balloon tip with Google Maps-style navigation icon; one-tap launches Google Maps app (or web browser fallback) with exact tower coordinates as destination in driving travel mode.\n2. Marker Options Sheet & Popup Menu Integration: 'Navigate in Google Maps' also accessible via the balloon three-dot popup menu and Marker Options bottom sheet for comprehensive accessibility from both map and right feeder drawer.\n3. Robust Coordinate Validation & Tap Debouncing: Coordinates are strictly validated (finite, valid lat/lng boundaries, non-zero) and protected with tap-debouncing cooldown to eliminate accidental double launches; alphanumeric Location Numbers (31A, 4T, 10/1T) preserved.\n4. Real-Time OTA CDN Invalidation: Manifest checks updated with cache-busting headers and query parameters to guarantee instant OTA update detection on devices without CDN or proxy delays."
   }
 }
