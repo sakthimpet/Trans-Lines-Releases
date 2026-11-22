@@ -3,10 +3,10 @@
   "versionName": "1.0.33",
   "releaseDate": "2026-11-22",
   "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.33/app-release.apk",
-  "apkChecksum": "40f04165d21e27366ac667c89be8630f01b3c079605c499c1239fa6488db2ede",
-  "apkSize": "74.0 MB",
+  "apkChecksum": "2d74664d1cdbb69c4af3540fc54e461cce20da703602c2e5e0286f5bd5315459",
+  "apkSize": "73.9 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Critical Span Crossings GIS Map Layer: Dedicated Crossings Layer rendering all verified & finalized highway, railway, river, and power line span crossings with category colors, high-contrast badges, and span highlights.\n2. Robust Waypoint & Feeder Matching: Fixed span crossings (e.g. River at Loc.134-135 and Road at Loc.136-137) by implementing multi-level feeder name normalization (handling DC circuit variations like 'I & II' vs 'I'/'II' and Tamil translations) and resilient tower identifier matching ('Loc.134' vs '134').\n3. Streamlined Map UI: Removed redundant floating screen toggle pill in favor of the clean autohide right-hand toolbar button and GIS Layer Manager.\n4. Centralized Common Report Design System: Enforced TANTRANSCO corporate styling across PDF, High-Res JPEG, and OpenXML Excel (.xlsx) with strict Division/Section header rules and zero approval blocks.\n5. Splash Screen Correction: Fully eliminated native white flash and hardcoded paths; logo loaded centrally from assets/icon.png with consistent #137C8B background.",
+  "releaseNotes": "1. Authoritative Crossings Database Consolidation: Synchronized Crossings Abstract and Register to use single authoritative CrossingDatabaseService (detected_feeder_crossings, 60 records) with zero discrepancy.\n2. 5 Approved Categories: Strictly enforced NH, SH, Main River, Railway, and EHT / Power Line across abstract, register, editor, import, and export.\n3. Crossings Abstract Theming: Replaced conflicting dark cards with theme-adaptive cards and high-contrast typography in light and dark modes.\n4. Route Verification Dialog: Resolved button row horizontal clipping, ensuring Confirm and Reverse actions are fully visible across all mobile displays.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
