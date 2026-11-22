@@ -1,22 +1,22 @@
 {
-  "versionCode": 33,
-  "versionName": "1.0.32",
+  "versionCode": 34,
+  "versionName": "1.0.33",
   "releaseDate": "2026-11-22",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.32/app-release.apk",
-  "apkChecksum": "377eabd88bcb0643d14d203da2610e397533d8f7568d367c761d4cbb4ae2746c",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.33/app-release.apk",
+  "apkChecksum": "40f04165d21e27366ac667c89be8630f01b3c079605c499c1239fa6488db2ede",
   "apkSize": "74.0 MB",
   "releaseStatus": "Active",
   "releaseNotes": "1. Critical Span Crossings GIS Map Layer: Dedicated Crossings Layer rendering all verified & finalized highway, railway, river, and power line span crossings with category colors, high-contrast badges, and span highlights.\n2. Robust Waypoint & Feeder Matching: Fixed span crossings (e.g. River at Loc.134-135 and Road at Loc.136-137) by implementing multi-level feeder name normalization (handling DC circuit variations like 'I & II' vs 'I'/'II' and Tamil translations) and resilient tower identifier matching ('Loc.134' vs '134').\n3. Streamlined Map UI: Removed redundant floating screen toggle pill in favor of the clean autohide right-hand toolbar button and GIS Layer Manager.\n4. Centralized Common Report Design System: Enforced TANTRANSCO corporate styling across PDF, High-Res JPEG, and OpenXML Excel (.xlsx) with strict Division/Section header rules and zero approval blocks.\n5. Splash Screen Correction: Fully eliminated native white flash and hardcoded paths; logo loaded centrally from assets/icon.png with consistent #137C8B background.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 32,
-    "versionName": "1.0.31",
-    "releaseDate": "2026-11-20",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.31/app-release.apk",
-    "apkChecksum": "d46ba45d47d434bedc4d097387deb58db01e69837041671f4271ad2eb28e7069",
-    "apkSize": "71.1 MB",
+    "versionCode": 33,
+    "versionName": "1.0.32",
+    "releaseDate": "2026-11-22",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.32/app-release.apk",
+    "apkChecksum": "377eabd88bcb0643d14d203da2610e397533d8f7568d367c761d4cbb4ae2746c",
+    "apkSize": "74.0 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. Single Circuit Line Drawing & DC Feeder Isolation: Fixed issue where single lines drawn in DC feeders inherited double-parallel line rendering and were saved with is_double_line: 1. Explicit Single Line designation now strictly renders as single circuit and persists with is_double_line: 0; auto-heals corrupted legacy single lines.\n2. Interactive Line Drawing Banner: Tap-to-toggle Single Line / Double Line directly from the active drawing overlay banner; balloon 'Start Line Here' prompts circuit type selection.\n3. Routine Patrol Edit Workflow Fix: Eliminated overlapping SnackBar with Cancel button that blocked the save/update button on smaller screens. Added dedicated side-by-side [Cancel Edit] and [Update Patrol Entry] action buttons with safe bottom spacing."
+    "releaseNotes": "OTA Release v1.0.32 with restored v1.0.25 Crossings module architecture."
   }
 }
