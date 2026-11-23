@@ -1,22 +1,22 @@
 {
-  "versionCode": 37,
-  "versionName": "1.0.36",
+  "versionCode": 38,
+  "versionName": "1.0.37",
   "releaseDate": "2026-11-23",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.36/app-release.apk",
-  "apkChecksum": "5713cc358e2b6a46e4eba7824542f258b1f8705818f4c3bf70ee657bb86974a7",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.37/app-release.apk",
+  "apkChecksum": "f50bf62f68d67a54e3117f4d6f533bfb1796f86f3cf3cf96c4e58fdac39bc724",
   "apkSize": "74.1 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. SQLite Migration Fix: Added proactive PRAGMA table_info schema inspection before creating index on intersection_event_id, preventing DatabaseException crashes during startup/detection on older schemas.\n2. EHT Power Line Detection Engine: Fully activated mutual feeder-to-feeder intersection detection with circuit clearance calculation (230kV overhead vs 110kV underlying) and fallback database loader.\n3. GIS Map Representation: Rendered single physical node marker per EHT crossing event with interactive dual-perspective inspection banner.\n4. Verification & Idempotency: Verified schema migration idempotency, zero-regression test suite, and clean static analysis.",
+  "releaseNotes": "1. Fix Black Screen & App Exit on Crossing Select: Removed redundant Navigator.pop in onSelectCrossingOnMap which previously popped the main TransLinesHomeScreen. Also enhanced PopScope so tapping Back on an active crossing highlight clears the banner rather than closing the app.\n2. Crossings Abstract Text Color: Changed 'Crossings Records (167)' header and empty status indicators from hardcoded black87 to high-contrast white in dark theme.\n3. Zero-Regression Verification: 100% test pass on crossings module.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 36,
-    "versionName": "1.0.35",
+    "versionCode": 37,
+    "versionName": "1.0.36",
     "releaseDate": "2026-11-23",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.35/app-release.apk",
-    "apkChecksum": "3442a7683f1989403c1606182e961004fe26d1aa1bcbd29d518d989a1688c5c7",
-    "apkSize": "74.0 MB",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.36/app-release.apk",
+    "apkChecksum": "5713cc358e2b6a46e4eba7824542f258b1f8705818f4c3bf70ee657bb86974a7",
+    "apkSize": "74.1 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. 4 Independent Counting Metrics: Unique Crossing Records (162 baseline / 60 detected), Total Crossing Spans (147 distinct spans), Feeders Covered (25 feeders), and Physical GIS Intersection Events.\n2. Mutual EHT Intersection Architecture: Dual feeder-wise records sharing a unified intersection_event_id with geodesic distance duplicate protection.\n3. Direction-Independent Span Normalization: Directional invariance (Loc A <-> Loc B) for span tracking.\n4. Category Protection & Elevation: Protected Main River from silent canal reclassification; elevated category cards to display both feeders and spans without category filters mutating global totals.\n5. Global 4-Metric Banner: High-contrast responsive banner across abstract sheet and register."
+    "releaseNotes": "1. SQLite Migration Fix: Added proactive PRAGMA table_info schema inspection before creating index on intersection_event_id, preventing DatabaseException crashes during startup/detection on older schemas.\n2. EHT Power Line Detection Engine: Fully activated mutual feeder-to-feeder intersection detection with circuit clearance calculation (230kV overhead vs 110kV underlying) and fallback database loader.\n3. GIS Map Representation: Rendered single physical node marker per EHT crossing event with interactive dual-perspective inspection banner.\n4. Verification & Idempotency: Verified schema migration idempotency, zero-regression test suite, and clean static analysis."
   }
 }
