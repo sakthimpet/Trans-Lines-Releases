@@ -1,22 +1,22 @@
 {
-  "versionCode": 39,
-  "versionName": "1.0.38",
-  "releaseDate": "2026-11-23",
-  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.38/app-release.apk",
-  "apkChecksum": "3e77be7b68db686d88254bda78cca2a212569b17130e8f04fb35ea748da5abd0",
-  "apkSize": "74.1 MB",
+  "versionCode": 40,
+  "versionName": "1.0.39",
+  "releaseDate": "2026-11-24",
+  "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.39/app-release.apk",
+  "apkChecksum": "8dc5325238373ea3583495e38f1517e5da6b1a6ccca225691cb1d489dc6b1d60",
+  "apkSize": "74.2 MB",
   "releaseStatus": "Active",
-  "releaseNotes": "1. Google Satellite & Google Hybrid: Replaced ESRI imagery with native Google Satellite (lyrs=s) and Google Hybrid (lyrs=y) high-resolution tiles.\n2. Fix Black Screen & App Exit on Crossing Select: Removed redundant Navigator.pop in onSelectCrossingOnMap and enhanced PopScope so tapping Back dismisses crossing highlight.\n3. Crossings Abstract Text Contrast: Changed 'Crossings Records' header from black87 to high-contrast white.\n4. Zero-Regression Verification: 100% test pass on crossings module.",
+  "releaseNotes": "1. GIS Measurement Tool: Complete Distance & Area measurement with geodesic path calculation, multi-segment midpoint labels, polygon area in m²/sq.ft/ha, and perimeter.\n2. Voltage Marker Differentiation: Rectangular badges for 230kV towers and circular badges for 110kV towers.\n3. Map In-Situ Verification: Added direct Verify/Edit action to crossing map callouts.\n4. Clean Layer Manager: Streamlined Independent GIS Overlays.",
   "stableVersionIdentifier": "1.0.10",
   "minSupportedVersion": 1,
   "previousStableRelease": {
-    "versionCode": 38,
-    "versionName": "1.0.37",
+    "versionCode": 39,
+    "versionName": "1.0.38",
     "releaseDate": "2026-11-23",
-    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.37/app-release.apk",
-    "apkChecksum": "87017dc085cb22fe30663b5dd9a6dfa7e1e03de7d9bf0000564e608198b0ea5a",
+    "apkUrl": "https://github.com/sakthimpet/Trans-Lines-Releases/releases/download/v1.0.38/app-release.apk",
+    "apkChecksum": "3e77be7b68db686d88254bda78cca2a212569b17130e8f04fb35ea748da5abd0",
     "apkSize": "74.1 MB",
     "releaseStatus": "Stable",
-    "releaseNotes": "1. SQLite Migration Fix: Added proactive PRAGMA table_info schema inspection before creating index on intersection_event_id, preventing DatabaseException crashes during startup/detection on older schemas.\n2. EHT Power Line Detection Engine: Fully activated mutual feeder-to-feeder intersection detection with circuit clearance calculation (230kV overhead vs 110kV underlying) and fallback database loader.\n3. GIS Map Representation: Rendered single physical node marker per EHT crossing event with interactive dual-perspective inspection banner.\n4. Verification & Idempotency: Verified schema migration idempotency, zero-regression test suite, and clean static analysis."
+    "releaseNotes": "1. Google Satellite & Google Hybrid: Replaced ESRI imagery with native Google Satellite (lyrs=s) and Google Hybrid (lyrs=y) high-resolution tiles.\n2. Fix Black Screen & App Exit on Crossing Select: Removed redundant Navigator.pop in onSelectCrossingOnMap and enhanced PopScope so tapping Back dismisses crossing highlight.\n3. Crossings Abstract Text Contrast: Changed 'Crossings Records' header from black87 to high-contrast white.\n4. Zero-Regression Verification: 100% test pass on crossings module."
   }
 }
