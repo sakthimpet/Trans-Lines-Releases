@@ -1,4 +1,6 @@
 {
+  "applicationId": "com.example.tantransco_lines",
+  "appName": "Trans-Lines GIS",
   "versionCode": 40,
   "versionName": "1.0.39",
   "releaseDate": "2026-11-24",
